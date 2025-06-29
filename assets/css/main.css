@@ -982,6 +982,18 @@ section,
   opacity: 1;
 }
 
+/* Remove hover zoom effect for videos */
+.portfolio_detail-boxs:hover video.portfolio_details-img {
+  transform: none;
+}
+
+/* Prevent overlay appearing on hover for videos */
+.portfolio_detail-boxs:hover video.portfolio_details-img + .portfolio-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 
 /*--------------------------------------------------------------
 # Services Section
